@@ -8,7 +8,7 @@
 
 ## Authorize
 
-Authorize用于在获取sso授权，包括登录sso和利用sso登录（授权）。其中授权sso中应用需要三个参数：#client id#, #responseType#以及#redirect uri#都在Authorize结构体中。这三个参数可以从其链接中获得。而state参数主要为了安全，而sso使用固定的1qw23e是不具备安全性能的，因此我无视了此参数。
+Authorize用于在获取sso授权，包括登录sso和利用sso登录（授权）。其中授权sso中应用需要三个参数：*client id*, *responseType*以及*redirect uri*都在Authorize结构体中。这三个参数可以从其链接中获得。而state参数主要为了安全，而sso使用固定的1qw23e是不具备安全性能的，因此我无视了此参数。
 
 例如：
 学工系统：https://sso.lixin.edu.cn/authorize.php?client_id=ufsso_hairun_saass&redirect_uri=http://saass.lixin.edu.cn/redirect.aspx&response_type=code&state=success
