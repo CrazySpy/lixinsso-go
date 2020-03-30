@@ -2,7 +2,7 @@
 
 ## User
 
-### New() *User
+### New(username string, password string) *User
 
 初始化一个用户对象，用于保存用户基本模型，即用户名和密码。
 
